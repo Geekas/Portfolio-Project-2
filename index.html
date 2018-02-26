@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link href="Images/open-iconic-master/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/animate.min.css"></link>
+    <link rel="stylesheet" href="CSS/lightbox.css"></link>
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/style.css" />
+    <script src="JS/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            getDefaultAbout();
+            validateFields();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="padding-top:10px;">
+            <a class="navbar-brand bg-papayawhip" href="#">Project 2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse position-relative" id="mainNav">
+                <div class="col-lg-12 d-none d-md-none d-lg-block">
+                    <ul class="nav justify-content-center" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" onclick="getDefaultAbout();" data-toggle="pill" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="getGallery();" data-toggle="pill" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="getNews();" data-toggle="pill" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="getPrices();" data-toggle="pill" href="#price">Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="getContact();" data-toggle="pill" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-lg-none d-xl-none">
+                    <ul class="nav navbar-nav mr-auto" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active text-center" onclick="getDefaultAbout();" data-toggle="pill" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center" onclick="getGallery();" data-toggle="pill" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center" onclick="getNews();" data-toggle="pill" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center" onclick="getPrices();" data-toggle="pill" href="#price">Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center" onclick="getContact();" data-toggle="pill" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-12">
+                <div id="content">
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="fixed-bottom container">
+            <div class="row container">
+                <div class="col-12">
+                    <p class="text-center" style="color:bisque;">&copy Ramunas Alksnys and Google!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/lightbox.js"></script>
+    <script type="text/javascript" src="JS/lightbox.min.js"></script>
+</footer>
+
+</html>

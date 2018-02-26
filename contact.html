@@ -1,0 +1,96 @@
+<div class="row">
+    <div class="col-12 col-lg-8 offset-lg-2 ">
+        <div class="card email">
+            <div class="card-header">
+                <p class="card-title">
+                    <p class="text-center header">
+                        <b>Contact us by phone, email or the form below</b>
+                    </p>
+                    <p>
+                        <h5 class="text-center">
+                            <b>My company "Get me into project!"</b>
+                        </h5>
+                        <h5 class="text-center">
+                            Vilnius, Lithuania
+                        </h5>
+                        <h5 class="text-center">
+                            <span class="glyphicon glyphicon-phone"></span>
+                            <b>
+                                Phone: +37062405633
+                            </b>
+                            <br>
+                        </h5>
+                        <h5 class="text-center">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            <b>
+                                Email: ramunas.alksnys@gmail.com
+                            </b>
+                            <br>
+                        </h5>
+                    </p>
+
+                </p>
+            </div>
+            <div class="card-header">
+                <p class="card-title header">
+                    <span class="oi oi-envelope-closed"></span>
+                    <b> Get in touch</b>
+                </p>
+            </div>
+            <div class="card-body">
+                <form id="contact-form">
+                    <div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-2 col-xs-6" for="inputName">Name:</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text" id="inputName" placeholder="Vardenis Pavardenis" required minlength="3" />
+                                <div class="error-field text-center" hidden>
+                                    <span>Need at least 3 characters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-2 col-xs-6" for="inputEmail">Email:</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="email" id="inputEmail" placeholder="vardenis.pavardenis@gmail.com" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                                />
+                                <div class="error-field text-center" hidden>
+                                    <span>Email format name@host.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-2 col-xs-6" for="inputSubject">Subject:</label>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text" id="inputSubject" placeholder="Hello" required minlength="6" />
+                                <div class="error-field text-center" hidden>
+                                    <span>Need at least 6 characters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group form-row">
+                            <label class="col-form-label col-md-2 col-xs-6" for="inputMesg">Subject:</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="inputMesg" placeholder="Just wanted to say hello..." rows="5" required minlength="6"></textarea>
+                                <div class="error-field text-center" hidden>
+                                    <span>Need at least 6 characters</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group form-row">
+                        <div class="col-3 offset-5 col-lg-3 offset-lg-5">
+                            <button type="button" class="btn btn-primary send">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
